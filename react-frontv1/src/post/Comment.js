@@ -21,7 +21,7 @@ class Comment extends Component {
         if (!text.length > 0 || text.length > 150) {
             this.setState({
                 error:
-                    "Comment should not be empty and less than 150 characters long"
+                    "Bình luận không được rỗng và lớn hơn 150 kí tự"
             });
             return false;
         }
@@ -32,7 +32,7 @@ class Comment extends Component {
         e.preventDefault();
 
         if (!isAuthenticated()) {
-            this.setState({ error: "Please signin to leave a comment" });
+            this.setState({ error: "Vui lòng nhập bình luận" });
             return false;
         }
 
@@ -71,7 +71,7 @@ class Comment extends Component {
 
     deleteConfirmed = comment => {
         let answer = window.confirm(
-            "Are you sure you want to delete your comment?"
+            "Bạn có chắc chắn xóa bình luận?"
         );
         if (answer) {
             this.deleteComment(comment);
@@ -84,7 +84,7 @@ class Comment extends Component {
 
         return (
             <div>
-                <h2 className="mt-5 mb-5">Leave a comment</h2>
+                <h2 className="mt-5 mb-5">Nhập bình luận</h2>
 
                 <form onSubmit={this.addComment}>
                     <div className="form-group">
@@ -93,10 +93,10 @@ class Comment extends Component {
                             onChange={this.handleChange}
                             value={this.state.text}
                             className="form-control"
-                            placeholder="Leave a comment..."
+                            placeholder="Nhập bình luận..."
                         />
                         <button className="btn btn-raised btn-success mt-2">
-                            Post
+                            Bình luận
                         </button>
                     </div>
                 </form>
@@ -109,7 +109,7 @@ class Comment extends Component {
                 </div>
 
                 <div className="col-md-12">
-                    <h3 className="text-primary">{comments.length} Comments</h3>
+                    <h3 className="text-primary">{comments.length} Bình Luận</h3>
                     <hr />
                     {comments.map((comment, i) => (
                         <div key={i}>
@@ -131,7 +131,7 @@ class Comment extends Component {
                                 <div>
                                     <p className="lead">{comment.text}</p>
                                     <p className="font-italic mark">
-                                        Posted by{" "}
+                                        Bình luận bởi{" "}
                                         <Link
                                             to={`/user/${comment.postedBy._id}`}
                                         >
@@ -154,7 +154,7 @@ class Comment extends Component {
                                                             }
                                                             className="text-danger float-right mr-1"
                                                         >
-                                                            Remove
+                                                            Xóa
                                                         </span>
                                                     </>
                                                 )}

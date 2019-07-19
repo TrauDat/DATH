@@ -84,8 +84,8 @@ class Posts extends Component {
                                     <div className="p-u-info">
                                     <Link to={`${posterId}`}>
                                         {posterName}{" "}
-                                    </Link> shared a memory with
-                                     <a href="#">Himalaya Singh</a> 
+                                    </Link> chia sẻ cùng với
+                                     <a href="#"> TrauDat</a> 
                                     </div>
                                     <div className="p-dt">
                                     <i className="fas fa-calendar"></i>
@@ -112,13 +112,7 @@ class Posts extends Component {
                                         /> 
                                 </Link>
                             
-                            {/* <div>
-                                <div className="p-acts">
-                                    <div className="p-act like"><i className="fas fa-thumbs-up"></i><span>25</span></div>
-                                    <div className="p-act comment"><i className="far fa-comments"></i><span>1</span></div>
-                                    <div className="p-act share"><i className="fas fa-reply"></i></div>
-                                </div>
-                            </div> */}
+                           
                         </div>
                         </div>
                     );
@@ -167,10 +161,7 @@ class Posts extends Component {
                                 <div className="panel panel-default">
                                 <div className="panel-body">
                                 <div className="cnt-label">
-                                        <div className="info">
-                                            <i className="l-i" id="l-i-i"></i>
-                                            <span>Giới thiệu</span>
-                                        </div>
+                                        
                                         
                                         <div className="lb-action">
                                             
@@ -189,11 +180,7 @@ class Posts extends Component {
 
                                 </div>
                                 <div id="i-box">
-                                    <div id="intro-line">Tôi là {user.name}</div>
-                                    <div id="u-occ">
-                                        {user.about}
-                                        </div>
-                                    <div id="u-loc"><i className="fas fa-map-marker"></i><a href="#">{user.location}</a></div>
+                                   
                                 </div>
                                 </div>
                             </div>

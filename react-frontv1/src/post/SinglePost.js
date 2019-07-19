@@ -110,8 +110,8 @@ class SinglePost extends Component {
                         <div className="p-u-info">
                         <Link to={`${posterId}`}>
                             {posterName}{" "}
-                        </Link> shared a memory with
-                         <a href="#">Himalaya Singh</a> 
+                        </Link> chia sẻ cùng với 
+                         <a href="#"> TrauDat</a> 
                         </div>
                         <div className="p-dt">
                         <i className="fas fa-calendar"></i>
@@ -157,8 +157,8 @@ class SinglePost extends Component {
                                 {likes} Like
                             </h3>
                         )}
-                        <div className="p-act comment"><i className="far fa-comments"></i><span>1</span></div>
-                        <div className="p-act share"><i className="fas fa-reply"></i></div>
+                       
+                     
                     </div>
                 </div>
             </div>

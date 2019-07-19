@@ -114,7 +114,7 @@ class MyEditProfile extends Component {
     signupForm = (name, email, password, about, location) => (
         <form>
             <div className="form-group">
-                <label className="text-muted">Profile Photo</label>
+                <label className="text-muted">Ảnh đại diện</label>
                 <input
                     onChange={this.handleChange("photo")}
                     type="file"
@@ -123,7 +123,7 @@ class MyEditProfile extends Component {
                 />
             </div>
             <div className="form-group">
-                <label className="text-muted">Profile Photo Background</label>
+                <label className="text-muted">Ảnh bìa</label>
                 <input
                     onChange={this.handleChange("photoBackground")}
                     type="file"
@@ -132,7 +132,7 @@ class MyEditProfile extends Component {
                 />
             </div>
             <div className="form-group">
-                <label className="text-muted">Name</label>
+                <label className="text-muted">Họ tên</label>
                 <input
                     onChange={this.handleChange("name")}
                     type="text"
@@ -151,7 +151,7 @@ class MyEditProfile extends Component {
             </div>
 
             <div className="form-group">
-                <label className="text-muted">About</label>
+                <label className="text-muted">Giới thiệu</label>
                 <textarea
                     onChange={this.handleChange("about")}
                     type="text"
@@ -161,7 +161,7 @@ class MyEditProfile extends Component {
             </div>
 
             <div className="form-group">
-                <label className="text-muted">Location</label>
+                <label className="text-muted">Địa điểm</label>
                 <textarea
                     onChange={this.handleChange("location")}
                     type="text"
@@ -171,7 +171,7 @@ class MyEditProfile extends Component {
             </div>
 
             <div className="form-group">
-                <label className="text-muted">Password</label>
+                <label className="text-muted">Mật khẩu</label>
                 <input
                     onChange={this.handleChange("password")}
                     type="password"
@@ -183,7 +183,7 @@ class MyEditProfile extends Component {
                 onClick={this.clickSubmit}
                 className="btn btn-raised btn-primary"
             >
-                Update
+                Cập nhật
             </button>
         </form>
     );
@@ -213,7 +213,7 @@ class MyEditProfile extends Component {
 
         return (
             <div className="container">
-                <h2 className="mt-5 mb-5">Edit Profile</h2>
+                <h2 className="mt-5 mb-5">Cập nhật thông tin</h2>
                 <div
                     className="alert alert-danger"
                     style={{ display: error ? "" : "none" }}
